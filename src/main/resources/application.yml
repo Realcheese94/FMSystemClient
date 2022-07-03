@@ -4,8 +4,18 @@ spring:
       client:
         auto-registration: true
         url: http://localhost:8081/
-
-
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/ssmH2
+    username: sa
+    password: sa
+  jpa:
+    show-sql: true
+    open-in-view: false
+    properties:
+      format_sql: true
+    hibernate:
+      ddl-auto: create
 management:
   endpoint:
     health:
