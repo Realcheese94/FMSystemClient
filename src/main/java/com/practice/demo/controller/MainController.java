@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/main")
 public class MainController {
 
-	@RequestMapping("/index")
+	@RequestMapping("/index.ssm")
 	public String index() {
 		return "index"; 
 	}
